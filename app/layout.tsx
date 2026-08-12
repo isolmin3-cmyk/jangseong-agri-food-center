@@ -3,14 +3,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "양구 농산물 가공지원센터",
-  description: "농업의 가능성을 제품으로 연결하는 농산물 가공지원센터",
+  title: { default: "장성농산물가공센터", template: "%s | 장성농산물가공센터" },
+  description: "장성의 건강한 농산물을 가치 있는 제품으로 연결하는 농산물가공센터",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
-  openGraph: { title: "양구 농산물 가공지원센터", description: "농업의 가능성을 제품으로", images: [{ url: "/og.png", width: 1200, height: 630 }] },
-  twitter: { card: "summary_large_image", title: "양구 농산물 가공지원센터", description: "농업의 가능성을 제품으로", images: ["/og.png"] },
+  openGraph: { title: "장성농산물가공센터", description: "장성의 농산물을 가치 있는 제품으로" },
+  twitter: { card: "summary", title: "장성농산물가공센터", description: "장성의 농산물을 가치 있는 제품으로" },
 };
 
 export default function RootLayout({

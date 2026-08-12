@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: "양구 농산물 가공지원센터",
   description: "농업의 가능성을 제품으로 연결하는 농산물 가공지원센터",
   icons: {

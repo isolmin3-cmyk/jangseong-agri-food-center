@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import brandLogo from "../../public/brand-logo.png";
+import footerLogo from "../../public/footer-logo.png";
 import { menus } from "../site-data";
 
-export function Logo({ header = false }: { header?: boolean }) { return <span className="site-logo">{header ? <span className="header-mark"><Image src={brandLogo} alt="" fill sizes="58px" priority/></span> : <span className="mark"><i/><i/><b/></span>}<span><small>JANGSEONG AGRI-FOOD</small>장성농산물가공센터</span></span>; }
+export function Logo({ header = false }: { header?: boolean }) { return <span className="site-logo">{header ? <span className="header-mark"><Image src={brandLogo} alt="" fill sizes="58px" priority/></span> : <span className="footer-mark"><Image src={footerLogo} alt="" fill sizes="48px"/></span>}<span><small>JANGSEONG AGRI-FOOD</small>장성농산물가공센터</span></span>; }
 
 export function Header() {
   const [open, setOpen] = useState(false);

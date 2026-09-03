@@ -4,10 +4,11 @@ export type MenuGroup = { title: string; subtitle: string; items: MenuItem[] };
 export const menus: MenuGroup[] = [
   { title: "가공센터 소개", subtitle: "센터를 소개합니다", items: [
     { label: "농산물가공센터란", href: "/about" }, { label: "시설현황", href: "/facilities" },
-    { label: "업무소개", href: "/business" }, { label: "가공제품소개", href: "/products" }, { label: "찾아오시는 길", href: "/location" },
+    { label: "업무소개", href: "/business" }, { label: "제조공정", href: "/process" },
+    { label: "가공제품소개", href: "/products" }, { label: "찾아오시는 길", href: "/location" },
   ]},
   { title: "이용안내", subtitle: "시설 이용을 안내합니다", items: [
-    { label: "이용방법", href: "/guide" }, { label: "제조공정", href: "/process" }, { label: "법적사항", href: "/legal" },
+    { label: "이용방법", href: "/guide" }, { label: "법적사항", href: "/legal" },
   ]},
   { title: "가공예약", subtitle: "온라인으로 예약하세요", items: [
     { label: "예약신청", href: "/reservation" }, { label: "예약확인", href: "/reservation-check" }, { label: "가공사용료", href: "/fees" },

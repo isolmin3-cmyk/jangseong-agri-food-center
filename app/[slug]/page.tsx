@@ -1,3 +1,4 @@
+import { ReservationCheckForm, ReservationBranchCards } from "../components/ReservationForm";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProcessGallery } from "../components/ProcessGallery";

@@ -1,16 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import brandLogo from "../../public/brand-logo.png";
 import { menus } from "../site-data";
 
-export function Logo() { return <span className="site-logo"><span className="mark"><i/><i/><b/></span><span><small>JANGSEONG AGRI-FOOD</small>장성농산물가공센터</span></span>; }
+export function Logo({ header = false }: { header?: boolean }) { return <span className="site-logo">{header ? <span className="header-mark"><Image src={brandLogo} alt="" fill sizes="58px" priority/></span> : <span className="mark"><i/><i/><b/></span>}<span><small>JANGSEONG AGRI-FOOD</small>장성농산물가공센터</span></span>; }
 
 export function Header() {
   const [open, setOpen] = useState(false);
   return <header className="header">
     <div className="topbar"><div className="container"><span>장성군 농업기술센터</span><div><Link href="/reservation-check">예약확인</Link><span>│</span><a href="#footer">사이트 안내</a></div></div></div>
-    <div className="navrow container"><Link href="/" aria-label="홈"><Logo/></Link>
+    <div className="navrow container"><Link href="/" aria-label="홈"><Logo header/></Link>
       <nav className="gnb" aria-label="주 메뉴">{menus.map(g=><div className="gnb-group" key={g.title}><Link href={g.items[0].href}>{g.title}</Link><div>{g.items.map(i=><Link key={i.href} href={i.href}>{i.label}</Link>)}</div></div>)}</nav>
       <button className="hamburger" aria-label="전체 메뉴" aria-expanded={open} onClick={()=>setOpen(!open)}><i/><i/><i/></button>
     </div>

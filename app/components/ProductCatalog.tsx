@@ -7,8 +7,8 @@ type Category = "전체" | "잼류" | "퓨레" | "음료";
 const categories: Category[] = ["전체", "잼류", "퓨레", "음료"];
 
 const products = [
-  { name: "블루베리쨈", category: "잼류", art: "art-2" },
-  { name: "딸기쨈", category: "잼류", art: "art-3" },
+  { name: "블루베리잼", category: "잼류", art: "art-2" },
+  { name: "딸기잼", category: "잼류", art: "art-3" },
   { name: "사과즙", category: "음료", art: "art-1" },
   { name: "토마토즙", category: "음료", art: "art-3" },
   { name: "토마토퓨레", category: "퓨레", art: "art-4" },

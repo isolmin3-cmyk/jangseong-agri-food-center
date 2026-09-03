@@ -7,6 +7,7 @@ export function ProcessGallery({ name, images }: { name: string; images: string[
   const [currentIndex, setCurrentIndex] = useState(0);
   const hasImages = images.length > 0;
   const hasMultipleImages = images.length > 1;
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   const showPrevious = () => {
     setCurrentIndex((index) => (index - 1 + images.length) % images.length);
@@ -21,7 +22,7 @@ export function ProcessGallery({ name, images }: { name: string; images: string[
       <div className="process-image" aria-live="polite">
         {hasImages ? (
           <Image
-            src={images[currentIndex]}
+            src={`${basePath}${images[currentIndex]}`}
             alt={`${name} 제조공정 ${currentIndex + 1}`}
             fill
             sizes="(max-width: 900px) 100vw, 320px"

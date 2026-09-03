@@ -19,3 +19,4 @@ footer{background:#162925;color:#bac6c2;padding:55px 0}.footer-inner{display:gri
 .header-mark{position:relative;display:inline-block;flex:0 0 58px;width:58px;height:58px}.header-mark img{object-fit:contain}
 
 @media(max-width:560px){.header-mark{flex-basis:48px;width:48px;height:48px}}
+.footer-mark{position:relative;display:inline-block;width:48px;height:48px}.footer-mark img{object-fit:contain}

@@ -43,6 +43,6 @@ export const processes: ProcessItem[] = [
   { name: "사과즙", category: "음료", images: ["/process-images/apple-juice-01.jpg", "/process-images/apple-juice-02.jpg", "/process-images/apple-juice-03.jpg"], steps: ["원료입고", "세척·선별", "파쇄", "착즙", "여과", "살균", "충진", "포장·출고"] },
   { name: "토마토즙", category: "음료", images: ["/process-images/tomato-juice-01.jpg", "/process-images/tomato-juice-02.jpg", "/process-images/tomato-juice-03.jpg"], steps: ["원료입고", "세척·선별", "파쇄", "착즙", "여과", "살균", "충진", "포장·출고"] },
   { name: "토마토퓨레", category: "퓨레", images: ["/process-images/tomato-puree-01.jpg", "/process-images/tomato-puree-02.jpg", "/process-images/tomato-puree-03.jpg"], steps: ["원료입고", "세척·선별", "파쇄", "가열", "농축", "충진", "후살균", "포장·출고"] },
-  { name: "딸기블루베리잼", category: "잼류", images: ["/process-images/strawberry-blueberry-jam-01.jpg", "/process-images/strawberry-blueberry-jam-02.jpg", "/process-images/strawberry-blueberry-jam-03.jpg"], steps: ["원료입고", "세척·선별", "파쇄", "계량·혼합", "가열·농축", "충진", "후살균", "포장·출고"] },
-  { name: "사과잼", category: "잼류", images: ["/process-images/apple-jam-01.jpg", "/process-images/apple-jam-02.jpg", "/process-images/apple-jam-03.jpg"], steps: ["원료입고", "세척·선별", "탈피·제심", "파쇄", "계량·혼합", "가열·농축", "충진", "포장·출고"] },
+  { name: "딸기블루베리잼", category: "잼류", images: ["/process-images/strawberry-blueberry-jam-02.jpg", "/process-images/strawberry-blueberry-jam-03.jpg"]
+  { name: "사과잼", category: "잼류",  images: ["/process-images/apple-juice-01.jpg", "/process-images/apple-juice-02.jpg"]
 ];

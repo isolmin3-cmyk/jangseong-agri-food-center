@@ -26,7 +26,6 @@ export function ReservationBranchCards() {
   return (
     <div className="branch-cards">
       <article>
-        <small>PROCESSING CENTER</small>
         <h3>가공센터</h3>
         <p>과채주스 · 액상차 · 잼류 · 분말류</p>
         <span>전월 지정 예약기간 접수</span>
@@ -36,7 +35,6 @@ export function ReservationBranchCards() {
         )}
       </article>
       <article>
-        <small>EDUCATION FACILITY</small>
         <h3>교육·실습실</h3>
         <p>가공창업 교육 · 시제품 실습</p>
         <span>교육 일정에 따라 접수</span>

@@ -28,7 +28,7 @@ export function ProcessGallery({ name, images }: { name: string; images: string[
             sizes="(max-width: 900px) 100vw, 320px"
           />
         ) : (
-          <span><b>IMAGE</b>제조공정 이미지 준비 중</span>
+          <span>제조공정 이미지 준비 중</span>
         )}
       </div>
       <div className="process-gallery-controls">

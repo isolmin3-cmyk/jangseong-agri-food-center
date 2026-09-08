@@ -62,7 +62,6 @@ export function ProductCatalog() {
                 sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 25vw"
               />
             </div>
-            <small>JANGSEONG LOCAL FOOD</small>
             <h3>{name}</h3>
           </article>
         ))}

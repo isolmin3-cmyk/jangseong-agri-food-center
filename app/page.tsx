@@ -12,7 +12,7 @@ const homeProductImages = [blueberryJamImage, strawberryJamImage, appleJuiceImag
 export default function Home(){return <><Header/><main>
   <section className="home-hero"><div className="container hero-inner"><p>농촌은 생명, 농업은 미래</p><h1>장성의 건강한 농산물을<br/><strong>가치 있는 제품</strong>으로 만듭니다</h1><span>농업인의 아이디어가 안전한 먹거리와 새로운 소득이 되도록 함께합니다.</span><Link href="/about">센터 소개 보기 <b>→</b></Link></div></section>
   <section className="home-service container">
-    <Link href="/about"><i>01</i><div><h2>농산물가공센터란?</h2><p>제품 개발부터 생산까지 농업인의 가공 창업을 지원합니다.</p></div><b>↗</b></Link>
+    <Link href="/about"><i>01</i><div><h2>장성예찬 영농조합법인이란?</h2><p>제품 개발부터 생산까지 농업인의 가공 창업을 지원합니다.</p></div><b>↗</b></Link>
     <Link href="/guide"><i>02</i><div><h2>센터 이용안내</h2><p>평일 09:00~18:00 · 공휴일 제외</p></div><b>↗</b></Link>
     <Link href="/reservation"><i>03</i><div><h2>가공시설 온라인 예약</h2><p>시설별 일정을 확인하고 예약을 신청하세요.</p></div><b>↗</b></Link>
   </section>

@@ -3,7 +3,7 @@ export type MenuGroup = { title: string; subtitle: string; items: MenuItem[] };
 
 export const menus: MenuGroup[] = [
   { title: "가공센터 소개", subtitle: "센터를 소개합니다", items: [
-    { label: "농산물가공센터란", href: "/about" }, { label: "시설현황", href: "/facilities" },
+    { label: "장성예찬 영농조합법인이란", href: "/about" }, { label: "시설현황", href: "/facilities" },
     { label: "업무소개", href: "/business" }, { label: "제조공정", href: "/process" },
     { label: "가공제품소개", href: "/products" }, { label: "찾아오시는 길", href: "/location" },
   ]},
@@ -21,7 +21,7 @@ export const menus: MenuGroup[] = [
 export const allSlugs = menus.flatMap(g => g.items.map(i => i.href.slice(1)));
 
 export const notices = [
-  ["공지", "농산물가공센터 시설 이용 안내", "센터관리자", "2026-08-01", "126"],
+  ["공지", "장성예찬 영농조합법인 시설 이용 안내", "센터관리자", "2026-08-01", "126"],
   ["공지", "하반기 가공 장비 안전교육 참여자 모집", "센터관리자", "2026-07-18", "98"],
   ["공지", "성수기 가공 예약 운영계획 안내", "센터관리자", "2026-06-24", "211"],
   ["안내", "포장재 규격 및 단가 변경 안내", "센터관리자", "2026-05-09", "175"],

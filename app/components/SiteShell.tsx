@@ -21,7 +21,7 @@ export function Header() {
   </header>;
 }
 
-export function Footer() { return <footer id="footer"><div className="container footer-inner"><Logo/><div><div className="footer-links"><Link href="/about">센터소개</Link><a href="#footer">개인정보 처리방침</a><a href="#footer">이메일 무단수집거부</a><a href="#footer">저작권 정책</a></div><p>전라남도 장성군 장성읍 일원 <span>│</span> 대표전화 061-000-0000 <span>│</span> 팩스 061-000-0001</p><small>※ 주소와 연락처는 실제 센터 정보로 교체해 주세요.</small><small>© 장성예찬 영농조합법인. 모든 권리 보유.</small></div></div></footer>; }
+export function Footer() { return <footer id="footer"><div className="container footer-inner"><Logo/><div><div className="footer-links"><Link href="/about">센터소개</Link><a href="#footer">개인정보 처리방침</a><a href="#footer">이메일 무단수집거부</a><a href="#footer">저작권 정책</a></div><p>전라남도 장성군 장성읍 일원 <span>│</span> 대표 문판길 <span>│</span> 전화 <a href="tel:01025116500">010-2511-6500</a> <span>│</span> 팩스 061-000-0001</p><small>※ 주소와 팩스 번호는 실제 센터 정보로 교체해 주세요.</small><small>© 장성예찬 영농조합법인. 모든 권리 보유.</small></div></div></footer>; }
 
 export function Shell({children}:{children:React.ReactNode}) { return <><Header/>{children}<Footer/></>; }
 
